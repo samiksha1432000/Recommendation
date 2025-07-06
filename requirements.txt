@@ -1,2 +1,6 @@
 streamlit
+pandas
 openai
+sklearn
+csv
+os
