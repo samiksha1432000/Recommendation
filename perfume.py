@@ -22,7 +22,7 @@ perfume_matrix = vectorizer.fit_transform(perfume_df["scent_description"])
 
 # Streamlit UI
 # Streamlit UI
-st.title("🧠 Conversational Perfume Recommender")
+st.title("Perfume Recommender")
 
 # Initialize session state
 if 'conversation' not in st.session_state:
@@ -41,7 +41,7 @@ if user_input:
 
     # Inject context-aware prompt
     messages = [
-        {"role": "system", "content": "You are a friendly, expert scent stylist and gift advisor. Based on a personality description, help refine suggestions with each user message. Always follow up with smart questions like: 'Would you like it to be gender-specific?', 'Should it be more long-lasting?', 'Do you want a floral or woody profile?', etc. Your goal is to guide them to a better match."},
+        {"role": "system", "content": "You are a friendly, expert scent stylist and gift advisor. Based on a personality description, help refine suggestions with each user message. Always follow up with smart questions like: 'Would you like it to be gender-specific?', 'Should it be more long-lasting?','Any budget limits?', 'Do you want a floral or woody profile?', etc. Your goal is to guide them to a better match."},
     ] + st.session_state.conversation
 
     try:
