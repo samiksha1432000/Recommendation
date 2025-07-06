@@ -1,6 +1,6 @@
 streamlit
 pandas
 openai
-sklearn
+scikit-learn
 csv
 os
