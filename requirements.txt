@@ -6,3 +6,4 @@ streamlit
 langchain
 kor
 langchain_community
+tiktoken
