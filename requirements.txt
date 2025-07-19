@@ -5,3 +5,4 @@ scikit-learn
 streamlit
 langchain
 kor
+langchain_community
